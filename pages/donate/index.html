@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Zoo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header-wrapper">
+        <header class="header">
+            <nav class="nav">
+                <div class="left-part">
+                    <div class="logo-footer" id="logo-header">
+                        <a href="#" class="a-footer">
+                            <span class="span-footer">
+                                PetStory
+                                <br>
+                                online
+                            </span>
+                            <img src="../../assets/icons/bamboo.svg" alt="bamboo">
+                        </a>
+                    </div>
+
+
+                    <ul class="nav-menu">
+                        <li><a href="../main/index.html" id="about">About</a></li>
+                        <li><a href="#">Map</a></li>
+                        <li><a href="#">Zoos</a></li>
+                        <li><a href="#" id="donate">Donate</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="right-part">
+                    <a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" target="_blank">Designed by &copy;</a>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <div class="donate-container">
+            <div class="donate-ad">
+                <h3>THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h3>
+                <span>
+                    Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs and public and private events cancelled or postponed for additional months. We need you now more than ever to help ensure that we overcome these challenges. We have been actively raising funds in the community, and we are grateful for the generosity.  But much more support is still needed, and we need your help! Please consider a gift today – no matter what size – to help us sustain our mission.
+                </span>
+            </div>
+            <div class="donate-inf">
+                <h3>Donation Information</h3>
+            </div>
+            <div class="feed-container">
+                <h2>Pick and feed a friend</h2>
+                <span>
+                    We know the animals bring you joy, and in these extraordinary times, we're glad.
+                </span>
+                <div class="calc-container">
+                    <div class="four">
+                        <span class="four-sign">
+                            4
+                        </span>
+                        <span class="four-inf">
+                            Panda diet for the day.
+                        </span>
+                    </div>
+                    <div class="multiplication-sign">
+                        x
+                    </div>
+                    <div class="feed-panda-container">
+                        <img src="../../assets/icons/panda-body.svg" alt="to feed a panda">
+                        <img class="panda-eye" src="../../assets/icons/panda-eye.svg" alt="">
+                    </div>
+                </div>
+                <div class="range-container">
+                    <div class="four-inf amount">
+                        Amount
+                    </div>
+                    <div class="range-input-container">
+
+                        <div class="donate-value-container">
+                            <label for="2000" class="label-donate-value-first">
+                                <input type="radio" name="donate-value" id="2000" class="">
+                            </label>
+                            <label for="1000" class="label-donate-value">
+                                <input type="radio" name="donate-value" id="1000" class="">
+                            </label>
+                            <label for="500" class="label-donate-value">
+                                <input type="radio" name="donate-value" id="500" class="">
+                            </label>
+                            <label for="250" class="label-donate-value">
+                                <input type="radio" name="donate-value" id="250" class="">
+                            </label>
+                            <label for="100" class="label-donate-value">
+                                <input type="radio" name="donate-value" id="100" class="">
+                            </label>
+                            <label for="50" class="label-donate-value">
+                                <input type="radio" name="donate-value" id="50" class="">
+                            </label>
+                            <label for="25" class="label-donate-value-last">
+                                <input type="radio" name="donate-value" id="25" class="">
+                            </label>
+                        </div>
+                        <!-- <input class="range" type="range" min="1" max="7" step="1" list="custom-list"/> -->
+                        <span class="radio-background"></span>
+                        <span class="radio-line"></span>
+                    </div>
+                    <div class="donate-signatures">
+                        <ul>
+                            <li>$2000</li>
+                            <li>$1000</li>
+                            <li>$500</li>
+                            <li>$250</li>
+                            <li>$100</li>
+                            <li>$50</li>
+                            <li>$25</li>
+                        </ul>
+                    </div>
+                    <div class="input-container">
+                        <label for="amount-input" class="amount-input-label">
+                            <input class="amount-input" min="" max="" type="number" id="amount-input" placeholder="Another amount">
+                            <div class="amount-input-sign">
+                                <img src="../../assets/icons/dollar.svg" alt="dollar">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="radio-container">
+                        <label for="month" class="form-radio-hidden">
+                            <input type="radio" id="month" name="one" class="form-radio">
+                            <span class="radio"></span>
+                            <span class="text">Monthly</span>
+                        </label>
+                        <label for="once" class="form-radio-hidden">
+                            <input type="radio" id="once" name="one" class="form-radio">
+                            <span class="radio"></span>
+                            <span class="text">Once</span>
+                        </label>
+                    </div>
+                    <button type="button" class="btn-favorite btn-feed">Feed a friend now</button>
+                    <span class="btn-feed-span">Share with your friends on social networks</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div>
+                <div class="logo-footer">
+                    <a href="#" class="a-footer">
+                        <span class="span-footer">
+                            PetStory
+                            <br>
+                            online
+                        </span>
+                        <img src="../../assets/icons/bamboo.svg" alt="bamboo">
+                    </a>
+                </div>
+
+                <div class="btn-donate-container">
+                    <button type="button" class="btn-donate">donate for volunteers</button>
+                </div>
+                <div class="social-container">
+                    <ul>
+                        <li><a href="#"><img src="../../assets/icons/facebook.svg" alt="facebook"></a></li>
+                        <li><a href="#"><img src="../../assets/icons/twitter.svg" alt="twitter"></a></li>
+                        <li><a href="#"><img src="../../assets/icons/instagram.svg" alt="instagram"></a></li>
+                        <li><a href="#"><img src="../../assets/icons/youtube.svg" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-nav-container">
+                <ul>
+                    <li><a href="../main/index.html" id="about">About</a></li>
+                    <li><a href="#">Map</a></li>
+                    <li><a href="#">Zoos</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-form-container">
+                <div class="form-container">
+                    <span class="form-text">Subscribe to our news</span>
+                    <br>
+                    <br>
+                    <form action="">
+                    <input placeholder="Enter your emeil" type="email" id="fname" name="fname" class="form-field">
+                    <input type="submit" value="Submit" class="btn-submit">
+                    </form>
+                </div>
+                <ul>
+                    <li>Designed by Alisa Samborskaya</li>
+                    <li>©RSSchool & ©Yem Digital 2021</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

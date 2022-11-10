@@ -73,6 +73,13 @@ body {
     height: 52px; */
 }
 
+.h1-class {
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 120%;
+    margin-right: 0;
+}
+
 .logo {
     opacity: 80%;
     /* margin-right: 63px; */
@@ -518,6 +525,21 @@ footer {
 
 .btn-donate-container {
     margin-top: 68px;
+
+}
+
+.btn-donate-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 298px;
+    height: 54px;
+    color: #FFFFFF;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
 }
 
 .btn-donate {
@@ -594,6 +616,11 @@ footer {
     background: #F1F3F2;
     border: 1px solid #333B41;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    opacity: 80%;
 }
 
 .btn-submit:active {

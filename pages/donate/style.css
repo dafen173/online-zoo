@@ -980,8 +980,6 @@ border: 1px solid #4B9200;
 .radio-background {
     width: 810px;
     height: 27px;
-    /* left: 65px;
-    top: 500px; */
     background: #404950;
     border-radius: 2px;
 }
@@ -995,35 +993,57 @@ border: 1px solid #4B9200;
     top: 4px;
 }
 
+.donate-value-container input {
+    appearance: none;
+    margin: 0;
+}
+
+.yellow-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #FFEE2E;
+    top: 44px;
+}
+
 .label-donate-value-first {
-    display: block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
     width: 40px;
-    /* background-color: #4B9200; */
-    text-align: left;
+    height: 80px;
+    top: -30px;
+}
+
+.label-donate-value:hover > .yellow-dot,
+.label-donate-value-first:hover > .yellow-dot,
+.label-donate-value-last:hover > .yellow-dot {
+    background-color: #FE9013;
 }
 
 .label-donate-value-last {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
     width: 40px;
-    /* background-color: #4B9200; */
-    text-align: right;
+    height: 80px;
+    top: -30px;
 }
 
 .label-donate-value {
-    display: block;
-    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     width: 80px;
-    /* height: 70px; */
-    /* border-radius: 100%; */
-    /* background-color: #4B9200; */
-    /* bottom: 40px; */
-    /* text-align: left; */
+    height: 80px;
+    top: -30px;
 }
 
 .donate-signatures {
     max-width: 865px;
-    /* margin-left: 10px; */
-    /* align-self: center; */
 }
 
 .donate-signatures ul {
@@ -1035,14 +1055,3 @@ border: 1px solid #4B9200;
 .donate-signatures li {
     display: inline-block;
 }
-
-/* .label-donate-value-container {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    background-color: yellow;
-} */
-
-
-
-

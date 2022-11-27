@@ -1509,14 +1509,17 @@ border: 1px solid #4B9200;
         left:15px;
     }
 
-    /* #range {
-        display: none;
-    } */
+    #range {
+        /* display: none; */
+        height: 0px;
+    }
 
 }
 
 
-
+#range ul {
+    list-style: none;
+}
 
 @media (max-width: 570px)  {
     .btn-donate-container a{
@@ -1531,7 +1534,15 @@ border: 1px solid #4B9200;
 
 @media (max-width: 320px) {
 
+    #range {
+        /* display: none; */
+        height: 26px;
+        /* margin-bottom: 30px; */
+    }
 
+    #empty-div {
+        height: 26px;
+    }
 
 
     .header-wrapper {
@@ -1755,10 +1766,6 @@ border: 1px solid #4B9200;
     .btn-donate-container {
         margin: 30px 0 0 0;
     }
-
-
-
-
 
     #logo-footer-container {
         display: none;

@@ -35,6 +35,8 @@ function myFunction(x) {
                         </ul>
                     </div>
 
+                    <div id='empty-div'></div>
+
                     <div class="btn-donate-container">
                         <a href="index.html" class="btn-donate">donate for volunteers</a>
                         <!-- <button type="button" class="btn-donate">donate for volunteers</button> -->

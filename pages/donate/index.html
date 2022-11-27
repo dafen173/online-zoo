@@ -13,55 +13,89 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="header-wrapper">
-        <header class="header">
-            <nav class="nav">
-                <div class="left-part">
-                    <div class="logo-footer" id="logo-header">
-                        <a href="../main/index.html" class="a-footer">
-                            <!-- <span class="span-footer">
-                                PetStory
-                                <br>
-                                online
-                            </span> -->
-                            <h1 class="span-footer h1-class">
-                                PetStory
-                                <br>
-                                online
-                            </h1>
-                            <img src="../../assets/icons/bamboo.svg" alt="bamboo">
-                        </a>
-                    </div>
+    <header class="header">
+        <nav class="nav">
+            <div class="left-part">
+                <div class="logo-footer" id="logo-header">
+                    <a href="../main/index.html" class="a-footer">
+                        <h1 class="span-footer h1-class">
+                            PetStory
+                            <br>
+                            online
+                        </h1>
+                        <img src="../../assets/icons/bamboo.svg" alt="bamboo">
+                    </a>
+                </div>
 
 
-                    <ul class="nav-menu">
-                        <li><a href="../main/index.html" id="about">About</a></li>
-                        <li><a href="#">Map</a></li>
-                        <li><a href="#">Zoos</a></li>
-                        <li><a href="#" id="donate">Donate</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
-                </div>
-                <div class="right-part">
-                    <a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" target="_blank">Designed by &copy;</a>
-                </div>
-            </nav>
-        </header>
-    </div>
+                <ul class="nav-menu">
+                    <li><a href="../main/index.html" id="about">About</a></li>
+                    <li><a href="#">Map</a></li>
+                    <li><a href="#">Zoos</a></li>
+                    <li><a href="#" id="donate">Donate</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="right-part">
+                <a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" target="_blank">Designed by &copy;</a>
+            </div>
+
+            <div class="burger-menu" id="burger-menu">
+                <img src="../../assets/icons/burger-menu.jpg" alt="burger menu">
+            </div>
+        </nav>
+    </header>
+
     <main>
+        <div class="header-wrapper">
+            <!-- <header class="header">
+                <nav class="nav">
+                    <div class="left-part">
+                        <div class="logo-footer" id="logo-header">
+                            <a href="../main/index.html" class="a-footer">
+                                <h1 class="span-footer h1-class">
+                                    PetStory
+                                    <br>
+                                    online
+                                </h1>
+                                <img src="../../assets/icons/bamboo.svg" alt="bamboo">
+                            </a>
+                        </div>
+    
+    
+                        <ul class="nav-menu">
+                            <li><a href="../main/index.html" id="about">About</a></li>
+                            <li><a href="#">Map</a></li>
+                            <li><a href="#">Zoos</a></li>
+                            <li><a href="#" id="donate">Donate</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-part">
+                        <a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" target="_blank">Designed by &copy;</a>
+                    </div>
+    
+                    <div class="burger-menu">
+                        <img src="../../assets/icons/burger-menu.jpg" alt="burger menu">
+                    </div>
+                </nav>
+            </header> -->
+        </div>
+
+
         <div class="donate-container">
             <div class="donate-ad">
                 <h3>THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h3>
                 <span>
                     Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs and public and private events cancelled or postponed for additional months. We need you now more than ever to help ensure that we overcome these challenges. We have been actively raising funds in the community, and we are grateful for the generosity.  But much more support is still needed, and we need your help! Please consider a gift today – no matter what size – to help us sustain our mission.
                 </span>
-            </div>
-            <div class="donate-inf">
-                <h3>Donation Information</h3>
+                <div class="donate-inf">
+                    <h3>Donation Information</h3>
+                </div>
             </div>
             <div class="feed-container">
                 <h2>Pick and feed a friend</h2>
-                <span>
+                <span class="span-feed">
                     We know the animals bring you joy, and in these extraordinary times, we're glad.
                 </span>
                 <div class="calc-container">
@@ -74,21 +108,25 @@
                         </span>
                     </div>
                     <div class="multiplication-sign">
-                        x
+                        X
                     </div>
                     <div class="feed-panda-container">
-                        <img src="../../assets/icons/panda-body.svg" alt="to feed a panda">
+                        <img id="panda-feed" src="../../assets/icons/panda-body.svg" alt="to feed a panda">
                         <img class="panda-eye" src="../../assets/icons/panda-eye.svg" alt="">
                     </div>
                 </div>
                 <div class="range-container">
-                    <div class="four-inf amount">
+                    <div class="amount-container amount">
                         Amount
                     </div>
                     <div class="range-input-container">
 
                         <div class="donate-value-container">
-                            <label for="2000" class="label-donate-value-first">
+                            <label for="5000" class="label-donate-value-first">
+                                <div class="yellow-dot"></div>
+                                <input type="radio" name="donate-value" id="5000" class="">
+                            </label>
+                            <label for="2000" class="label-donate-value" id="two-thousand">
                                 <div class="yellow-dot"></div>
                                 <input type="radio" name="donate-value" id="2000" class="">
                             </label>
@@ -123,6 +161,7 @@
                     </div>
                     <div class="donate-signatures">
                         <ul>
+                            <li>$5000</li>
                             <li>$2000</li>
                             <li>$1000</li>
                             <li>$500</li>
@@ -134,7 +173,7 @@
                     </div>
                     <div class="input-container">
                         <label for="amount-input" class="amount-input-label">
-                            <input class="amount-input" min="" max="" type="number" id="amount-input" placeholder="Another amount">
+                            <input class="amount-input" min="" max="3" type="number" id="amount-input" placeholder="Another amount">
                             <div class="amount-input-sign">
                                 <img src="../../assets/icons/dollar.svg" alt="dollar">
                             </div>
@@ -160,15 +199,15 @@
     </main>
     <footer>
         <div class="footer-container">
-            <div>
-                <div class="logo-footer">
+            <div class="tablet-footer-left-part">
+                <div class="logo-footer" id="logo-footer-container">
                     <a href="../main/index.html" class="a-footer">
                         <span class="span-footer">
                             PetStory
                             <br>
-                            online
+                            onlineHTML!!!!!
                         </span>
-                        <img src="../../assets/icons/bamboo.svg" alt="bamboo">
+                        <img src="../../assets/icons/bamboo.svg" id="logo-footer" alt="bamboo">
                     </a>
                 </div>
 
@@ -185,22 +224,14 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer-nav-container">
-                <ul>
-                    <li><a href="../main/index.html" id="about">About</a></li>
-                    <li><a href="#">Map</a></li>
-                    <li><a href="#">Zoos</a></li>
-                    <li><a href="#">Contact us</a></li>
-                </ul>
-            </div>
             <div class="footer-form-container">
                 <div class="form-container">
                     <span class="form-text">Subscribe to our news</span>
                     <br>
                     <br>
-                    <form action="">
-                    <input placeholder="Enter your emeil" type="email" id="fname" name="fname" class="form-field">
-                    <input type="submit" value="Submit" class="btn-submit">
+                    <form action="" class="footer-form">
+                        <input placeholder="Enter your emeil" type="email" id="fname" name="fname" class="form-field">
+                        <input type="submit" value="Submit" class="btn-submit">
                     </form>
                 </div>
                 <ul>
@@ -209,6 +240,18 @@
                 </ul>
             </div>
         </div>
+
+
+        <div class="footer-nav-container">
+            <ul>
+                <li><a href="../main/index.html" id="about">About</a></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">Zoos</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
     </footer>
 </body>
+<script src="script.js"></script>
 </html>

@@ -13,32 +13,77 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="header-wrapper">
-        <header class="header">
-            <nav class="nav">
-                <div class="left-part">
-                    <h1 id="h1">
-                        <a href="#" class="logo"><img src="../../assets/images/logo_footer.png" alt="zoo logo"></a>
-                    </h1>
-                    <!-- <img src="../../assets/images/logo_footer.png" alt="zoo logo"> -->
-                    <ul class="nav-menu">
-                        <!-- !!!!!!!!!!!!!!!!!!!!!!! About should be highlighted by default. And it should stop being interactive when other menu items are clicked. -->
-                        <li><a href="#" id="about">About</a></li>
-                        <!-- !!!!!!!!!!!!!!!!!!!!!!! About should be highlighted by default. And it should stop being interactive when other menu items are clicked. -->
+    <!-- <header class="header">
+        <nav class="nav">
+            <div class="left-part">
+                <h1 id="h1">
+                    <a href="#" class="logo"><img src="../../assets/images/logo_footer.png" alt="zoo logo"></a>
+                </h1>
+                <ul class="nav-menu">
+                    <li><a href="./index.html" id="about">About</a></li>
+                    <li><a href="#">Map</a></li>
+                    <li><a href="#">Zoos</a></li>
+                    <li><a href="../donate/index.html">Donate</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="right-part">
+                <a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" target="_blank">Designed by &copy;</a>
+            </div>
+        </nav>
+    </header> -->
 
-                        <li><a href="#">Map</a></li>
-                        <li><a href="#">Zoos</a></li>
-                        <li><a href="../donate/index.html">Donate</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <!-- </div> -->
-                        <!-- <li>Designed by &copy;</li> -->
-                    </ul>
+    <header class="header">
+        <nav class="nav">
+            <div class="left-part">
+                <div class="logo-footer" id="logo-header">
+                    <a href="./index.html" class="a-footer">
+                        <h1 class="span-footer h1-class">
+                            PetStory
+                            <br>
+                            online
+                        </h1>
+                        <img src="../../assets/icons/bamboo.svg" alt="bamboo">
+                    </a>
                 </div>
-                <div class="right-part">
-                    <a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" target="_blank">Designed by &copy;</a>
+
+
+                <ul class="nav-menu">
+                    <li><a href="./index.html" id="about">About</a></li>
+                    <li><a href="#">Map</a></li>
+                    <li><a href="#">Zoos</a></li>
+                    <li><a href="../donate/index.html" id="donate">Donate</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="right-part">
+                <a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" target="_blank">Designed by &copy;</a>
+            </div>
+
+            <div class="burger-menu" id="burger-menu">
+                <img src="../../assets/icons/burger-menu.jpg" alt="burger menu">
+            </div>
+            <div id="burger-content" class="burger-content">
+                <div class="cross-about-container">
+                    <a href="./index.html">About</a>
+                    <span class="burger-cross">X</span>
                 </div>
-            </nav>
-            <button type="button" class="btn_1">WATCH ONLINE</button>
+                <a href="#">Map</a>
+                <a href="#">Zoos</a>
+                <a href="../donate/index.html">Donate</a>
+                <a href="#">Contact us</a>
+                <a href="#">Designed by &copy;</a>
+            </div>
+
+            
+        </nav>
+    </header>
+
+    <main>
+        <div class="header-wrapper">
+        </div>
+        <button type="button" class="btn_1">WATCH ONLINE</button>
+        <div class="circle-slogan-container">
             <div class="circle"></div>
             <div class="circle-slogan">
                 WATCH
@@ -47,10 +92,16 @@
                 ANIMAL
                 ONLINE
             </div>
-        </header>
-    </div>
+        </div>
+        <div class="circle"></div>
+        <div class="circle-slogan">
+            WATCH
+            YOUR
+            <span>FAVORITE</span>
+            ANIMAL
+            ONLINE
+        </div>
 
-    <main>
         <div class="backstage-container">
             <div class="backstage-pic">
                 <img src="../../assets/images/backstage-pic.jpg" alt="olderman">
@@ -176,8 +227,20 @@
             <button type="button" class="btn-favorite">CHOOSE YOUR FAVORITE</button>
         </div>
 
-        <div class="feed-container">
-
+        <div class="about-feed-container">
+            <div class="feed-container">
+                <h2>Pick and feed a friend</h2>
+                <span class="span-feed">
+                    We know the animals bring you joy, and in these extraordinary times, we're glad.
+                </span>
+                <span>
+                    During a time when the COVID-19 epidemic is touching all of our lives, we're proud and glad that people around the world find joy in PetStory.
+                </span>
+                <span>
+                    Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider a gift to our <span class="underline">Emergency Support Fund</span>.
+                </span>
+                
+            </div>
         </div>
 
     </main>
@@ -233,4 +296,5 @@
         </div>
     </footer>
 </body>
+<script src="script.js"></script>
 </html>

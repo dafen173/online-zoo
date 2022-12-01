@@ -32,7 +32,7 @@
                     <li><a href="../main/index.html" id="about">About</a></li>
                     <li><a href="#">Map</a></li>
                     <li><a href="#">Zoos</a></li>
-                    <li><a href="#" id="donate">Donate</a></li>
+                    <li><a href="./index.html" id="donate">Donate</a></li>
                     <li><a href="#">Contact us</a></li>
                 </ul>
             </div>
@@ -43,45 +43,24 @@
             <div class="burger-menu" id="burger-menu">
                 <img src="../../assets/icons/burger-menu.jpg" alt="burger menu">
             </div>
+            <div id="burger-content" class="burger-content">
+                <div class="cross-about-container">
+                    <a href="../main/index.html">About</a>
+                    <span class="burger-cross">X</span>
+                </div>
+                <a href="#">Map</a>
+                <a href="#">Zoos</a>
+                <a href="./index.html">Donate</a>
+                <a href="#">Contact us</a>
+                <a href="#">Designed by &copy;</a>
+            </div>
+
+            
         </nav>
     </header>
 
     <main>
-        <div class="header-wrapper">
-            <!-- <header class="header">
-                <nav class="nav">
-                    <div class="left-part">
-                        <div class="logo-footer" id="logo-header">
-                            <a href="../main/index.html" class="a-footer">
-                                <h1 class="span-footer h1-class">
-                                    PetStory
-                                    <br>
-                                    online
-                                </h1>
-                                <img src="../../assets/icons/bamboo.svg" alt="bamboo">
-                            </a>
-                        </div>
-    
-    
-                        <ul class="nav-menu">
-                            <li><a href="../main/index.html" id="about">About</a></li>
-                            <li><a href="#">Map</a></li>
-                            <li><a href="#">Zoos</a></li>
-                            <li><a href="#" id="donate">Donate</a></li>
-                            <li><a href="#">Contact us</a></li>
-                        </ul>
-                    </div>
-                    <div class="right-part">
-                        <a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" target="_blank">Designed by &copy;</a>
-                    </div>
-    
-                    <div class="burger-menu">
-                        <img src="../../assets/icons/burger-menu.jpg" alt="burger menu">
-                    </div>
-                </nav>
-            </header> -->
-        </div>
-
+        <div class="header-wrapper"></div>
 
         <div class="donate-container">
             <div class="donate-ad">
@@ -123,35 +102,35 @@
 
                         <div class="donate-value-container">
                             <label for="5000" class="label-donate-value-first">
-                                <div class="yellow-dot"></div>
+                                <div class="yellow-dot" data-value="5000"></div>
                                 <input type="radio" name="donate-value" id="5000" class="">
                             </label>
                             <label for="2000" class="label-donate-value" id="two-thousand">
-                                <div class="yellow-dot"></div>
+                                <div class="yellow-dot" data-value="2000"></div>
                                 <input type="radio" name="donate-value" id="2000" class="">
                             </label>
                             <label for="1000" class="label-donate-value">
-                                <div class="yellow-dot"></div>
+                                <div class="yellow-dot" data-value="1000"></div>
                                 <input type="radio" name="donate-value" id="1000" class="">
                             </label>
                             <label for="500" class="label-donate-value">
-                                <div class="yellow-dot"></div>
+                                <div class="yellow-dot" data-value="500"></div>
                                 <input type="radio" name="donate-value" id="500" class="">
                             </label>
                             <label for="250" class="label-donate-value">
-                                <div class="yellow-dot"></div>
+                                <div class="yellow-dot" data-value="250"></div>
                                 <input type="radio" name="donate-value" id="250" class="">
                             </label>
                             <label for="100" class="label-donate-value">
-                                <div class="yellow-dot"></div>
+                                <div class="yellow-dot" data-value="100" id="hundred"></div>
                                 <input type="radio" name="donate-value" id="100" class="">
                             </label>
                             <label for="50" class="label-donate-value">
-                                <div class="yellow-dot"></div>
+                                <div class="yellow-dot" data-value="50"></div>
                                 <input type="radio" name="donate-value" id="50" class="">
                             </label>
                             <label for="25" class="label-donate-value-last">
-                                <div class="yellow-dot"></div>
+                                <div class="yellow-dot" data-value="25"></div>
                                 <input type="radio" name="donate-value" id="25" class="">
                             </label>
                         </div>
@@ -173,7 +152,18 @@
                     </div>
                     <div class="input-container">
                         <label for="amount-input" class="amount-input-label">
-                            <input class="amount-input" min="" max="3" type="number" id="amount-input" placeholder="Another amount">
+                            <!-- <input class="amount-input" max="4" type="number" id="amount-input" placeholder="Another amount"> -->
+                            <input class="amount-input" type="number" id="amount-input"
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                maxlength = "4"
+                                placeholder="Another amount"
+                            >
+                            <!-- <input name="somename"
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                type = "number"
+                                maxlength = "6"
+                            /> -->
+
                             <div class="amount-input-sign">
                                 <img src="../../assets/icons/dollar.svg" alt="dollar">
                             </div>

@@ -56,9 +56,6 @@ burgerCross.addEventListener("click", function(){
 })
 
 
-
-
-
 // const leftRightBtns = document.querySelectorAll('.btn-card')
 document.querySelector('.btn-left').addEventListener('click', function() {
     console.log('yooooooooo')

@@ -13,6 +13,7 @@ body {
     max-width: 1600px;
     width: 100%;
     /* width: 100%; */
+    display: grid;
 }
 
 .header {
@@ -230,20 +231,17 @@ background: #4B9200;
 }
 
 .circle-slogan {
+    display: grid;
     position: absolute;
     /* width: 500px;
     height: 400px; */
     max-width: 500px;
     width: 100%;
     height: auto;
-
     left: calc(50% - 500.31px/2 + 330.15px);
     top: 166px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
-    /* font-size: 106.496px; */
-    font-size: 50%;
+    font-size: 106.496px;
     line-height: 75%;
     text-align: center;
     color: white;
@@ -336,10 +334,11 @@ main {
     display: flex;
     width: 100%;
     max-width: 1161px;
-    margin: auto;
+    /* margin: auto; */
+    margin: 0 20px;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 140px;
+    /* margin-top: 140px; */
 }
 
 .pets-container div {
@@ -398,7 +397,7 @@ main {
 }
 
 .btn-card {
-    position: absolute;
+    /* position: absolute; */
     width: 62px;
     height: 62px;
     background-color: #F9804B;
@@ -419,8 +418,8 @@ main {
 .btn-left,
 .btn-left:hover,
 .btn-left:active {
-    right: 1400px;
-    top: 1093px;
+    /* right: 1400px; */
+    /* top: 1093px; */
     background-image: url(../../assets/images/vector-left.svg);
     background-repeat: no-repeat;
     background-position-y: center;
@@ -430,8 +429,8 @@ main {
 .btn-right,
 .btn-right:hover,
 .btn-right:active {
-    right: 137px;
-    top: 1097px;
+    /* right: 137px; */
+    /* top: 1097px; */
     background-image: url(../../assets/images/vector-right.svg);
     background-repeat: no-repeat;
     background-position-y: center;
@@ -440,26 +439,31 @@ main {
 
 
 .plant-left {
-    position: absolute;
-    width: 880px;
-    height: 460px;
+    /* position: absolute; */
+    /* width: 880px; */
+    /* height: 460px; */
     left: -610px;
-    top: 1400px;
+    /* top: 1400px; */
 }
 
 .plant-right {
-    position: absolute;
+    /* position: absolute; */
     width: 368px;
     height: 275px;
-    top: 1520px;
-    left: 1220px;
+    /* top: 1520px; */
+    /* left: 1220px; */
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .plant-container {
-    height: 232px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    /* height: 232px; */
     text-align: center;
-    margin-top: 60px;
+    /* margin-top: 60px; */
+
 }
 
 
@@ -608,9 +612,9 @@ footer {
     backdrop-filter: blur(2px);
     border-radius: 20px;
     width: 72.5%;
-    margin-top: 69px;
+    margin: 69px 0 100px 0;
 
-    /* padding-left: 8.53%; */
+    padding-bottom: 60px;
 }
 
 .feed-container h2{
@@ -1417,6 +1421,16 @@ footer {
     } */
 }
 
+
+
+
+
+.pets-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+}
 
 
 

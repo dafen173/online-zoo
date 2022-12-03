@@ -1,3 +1,8 @@
+import { cards } from "./data"
+
+// import {addUsers} from "../action/addUsers"
+
+
 
 
 const burgerBtn = document.getElementById('burger-menu')
@@ -50,6 +55,32 @@ burgerCross.addEventListener("click", function(){
     logoHeader.classList.toggle('border_orange')
 })
 
+
+
+
+
+// const leftRightBtns = document.querySelectorAll('.btn-card')
+document.querySelector('.btn-left').addEventListener('click', function() {
+    console.log('yooooooooo')
+
+    document.querySelector('.pets-container').innerHTML = `
+        <div class="card">
+            <img class="card-pic" src="../../assets/images/pandas.jpg" alt="pandas">
+            <div class="card-content">
+                <div class="card-text">
+                    <span class="card-name">giant pandas</span>
+                    <br>
+                    <span class="card-describe">Native to Southwest China</span>
+                </div>
+                <img id="card-icon" src="../../assets/icons/banana-bamboo_icon.png" alt="banana">
+            </div>
+        </div>
+    `
+
+})
+document.querySelector('.btn-right').addEventListener('click', function() {
+    console.log('yooooooooo')
+})
 
 
 
@@ -206,51 +237,6 @@ function myFunction(x) {
 let tabletViewMax = window.matchMedia("(max-width: 640px)")
 
 
-
-// let logoFooter = document.getElementById('logo-footer-container')
-// function phoneLogo(x) {
-//     if (x.matches) {
-//         logoFooter.innerHTML = `
-//             <a href="../main/index.html" class="a-footer">
-//                 <span class="span-footer">
-//                     PetStory online
-//                 </span>
-//                 <img src="../../assets/icons/bamboo.svg" id="logo-footer" alt="bamboo">
-//             </a>
-//         `
-//         // let footerTop = document.querySelector('.tablet-footer-left-part')
-//         let range = document.createElement('div')
-//         range.id = 'range'
-//         range.className = 'social-container'
-//         logoFooter.insertAdjacentElement("afterend", range)
-//         range.innerHTML = `
-//             <ul>
-//                 <li><a href="#"><img src="../../assets/icons/facebook-short.svg" alt="facebook"></a></li>
-//                 <li><a href="#"><img src="../../assets/icons/twitter-short.svg" alt="twitter"></a></li>
-//                 <li><a href="#"><img src="../../assets/icons/instagram-short.svg" alt="instagram"></a></li>
-//                 <li><a href="#"><img src="../../assets/icons/youtube-short.svg" alt="youtube"></a></li>
-//             </ul>
-//         `
-
-//     }
-//     else {
-//         logoFooter.innerHTML = `
-//             <a href="../main/index.html" class="a-footer">
-//                 <span class="span-footer">
-//                     PetStory
-//                     <br>
-//                     online
-//                 </span>
-//                 <img src="../../assets/icons/bamboo.svg" id="logo-footer" alt="bamboo">
-//             </a>
-//         `
-//         let rangeRemove = document.getElementById('range')
-//         if (rangeRemove) {
-//             rangeRemove.remove()
-//         }
-//     }
-// }
-// let phoneView = window.matchMedia("(max-width: 320px)")
 
 
 myFunction(tabletViewMax)
